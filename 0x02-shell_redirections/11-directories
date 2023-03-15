@@ -1,2 +1,2 @@
 #!/bin/bash
-tree -a -d -L 1 | tail -n +2 | wc -l
+find . -type d ! -path . -print | wc -1
